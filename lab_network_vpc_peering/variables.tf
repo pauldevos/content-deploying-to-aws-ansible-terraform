@@ -1,11 +1,11 @@
 variable "external_ip" {
   type    = string
-  default = "0.0.0.0/0"
+  default = "0.0.0.0/0" # all public traffic
 }
 
 variable "profile" {
   type    = string
-  default = "default"
+  default = "default" # profile is defined for permission to provision EC2
 }
 
 variable "region-master" {
